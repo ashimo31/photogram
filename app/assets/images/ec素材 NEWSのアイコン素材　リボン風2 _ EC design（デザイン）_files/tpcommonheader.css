@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* common header */
+div#tplinkheader{
+	height:60px;
+	width:100%;
+	margin-bottom:0;
+	padding-bottom:0;
+	border-bottom:1px solid #EEE;
+	position:relative;
+	z-index:9999;
+	background:#fff;
+}
+div#tplinkheader div#bPointer{
+	position:absolute;
+	top:40px;
+	left:0px;
+	padding:5px 10px;
+	background:#FF6633;
+	color:#fff;
+	font-size:0.75em;
+	display:none;
+}
+div#tplinkheader ul{
+	height:60px;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div#tplinkheader ul li{
+	list-style:none;
+	float:left;
+	width:30px;
+	height:30px;
+	margin:0;
+	padding:0;
+}
+div#tplinkheader ul li:last-child{
+	float:right;
+}
+div#tplinkheader ul li a{
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(http://topeconheroes.com/tpcommonheader/tplinkheader.png);
+	text-indent:-9999px;
+	overflow:hidden;
+}
+div#tplinkheader ul li a:hover{
+	opacity:0.7;
+}
+div#tplinkheader ul li:nth-child(1){
+	background:url(http://topeconheroes.com/tpcommonheader/tplinkheader.png);
+	background-position:-120px -60px;
+	text-indent:-9999px;
+}
+div#tplinkheader ul li:nth-child(2) a{ background-position:0px 0;}
+div#tplinkheader ul li:nth-child(3) a{ background-position:-30px 0;}
+div#tplinkheader ul li:nth-child(4) a{ background-position:-60px 0;}
+div#tplinkheader ul li:nth-child(5) a{ background-position:-90px 0;}
+div#tplinkheader ul li:nth-child(6) a{ background-position:-120px 0;}
+div#tplinkheader ul li:nth-child(7) a{ background-position:-150px 0;}
+div#tplinkheader ul li:nth-child(8) a{ background-position:-210px 0;}/*flode photoないので飛ばす*/
+div#tplinkheader ul li:nth-child(9) a{ background-position:-270px 0;}/*eventないので飛ばす*/
+div#tplinkheader ul li:nth-child(10) a{ background-position:-300px 0;}
+div#tplinkheader ul li:nth-child(11) a{ background-position:-420px 0;}
+div#tplinkheader ul li:nth-child(12) a{ background-position:-240px 0;}/* event */
+div#tplinkheader ul li:nth-child(13) a{ background-position:-480px 0;}/*pattern*/
+div#tplinkheader ul li:nth-child(14) a{ background-position:-450px 0;}/*icon*/
+div#tplinkheader ul li:nth-child(15) a{ background-position:-1080px 0;}/*twitter*/
+/*over 500px width*/
+@media only screen and (min-width:420px){
+	div#tplinkheader ul li:nth-child(1){
+		background:url(http://topeconheroes.com/tpcommonheader/tplinkheader.png);
+  		background:url(tplinkheader.png);/*ローカル用*/
+		background-position:0 -60px;
+		width:120px;
+		height:30px;
+		text-indent:-9999px;
+	}
+}
+
+@media only screen and (min-width:510px){
+	div#tplinkheader ul,div#tplinkheader{
+		height:30px;
+	}
+	div#tplinkheader ul li:last-child{
+		float:right;
+	}
+}

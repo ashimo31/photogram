@@ -5,6 +5,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order('created_at DESC').page params[:page]
+    raise
   end
 
   def show
@@ -18,10 +19,10 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
 
     if @post.save
-      flash[:success] = "Your post has been created!"
+      flash[:success] = "写真を掲載しました!"
       redirect_to root_path
     else
-      flash[:alert] = "Your new post couldn't be created!  Please check the form."
+      flash[:alert] = "写真の掲載ができません!  フォームを見直してください"
       render :new
     end
   end
@@ -31,17 +32,17 @@ class PostsController < ApplicationController
 
   def update
     if @post.update(post_params)
-      flash[:success] = "Post updated."
+      flash[:success] = "更新しました！"
       redirect_to root_path
     else
-      flash[:alert] = "Update failed.  Please check the form."
+      flash[:alert] = "更新できません!  フォームを見直してください"
       render :edit
     end
   end
 
   def destroy
     @post.destroy
-    flash[:success] = "Your post has been deleted."
+    flash[:success] = "写真が削除されました！"
     redirect_to root_path
   end
 
@@ -66,7 +67,7 @@ class PostsController < ApplicationController
 
   def owned_post
     unless current_user == @post.user
-      flash[:alert] = "That post doesn't belong to you!"
+      flash[:alert] = "あなたの写真ではありません!"
       redirect_to root_path
     end
   end

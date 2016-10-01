@@ -17,6 +17,18 @@ gem 'devise'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'kaminari', '~> 0.16.3'
 gem 'jquery-turbolinks'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'therubyracer', platforms: :ruby
+gem 'rails_admin'
+gem 'cancan'
+
+
+
+
 
 group :development, :test do
   gem 'byebug'
@@ -26,4 +38,11 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4'
   gem 'rspec-rails', '~> 3.3.0'
   gem 'factory_girl_rails'
+
+  gem 'dotenv-rails'
+
+  gem 'pry-rails'
+  gem 'better_errors'
+  gem 'rails-erd', github: 'paulwittmann/rails-erd', branch: 'mavericks'
+
 end

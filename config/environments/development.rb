@@ -10,7 +10,8 @@ Rails.application.configure do
   config.eager_load = false
 
   # Show full error reports and disable caching.
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
+
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
@@ -24,6 +25,7 @@ Rails.application.configure do
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
+  config.assets.raise_runtime_errors = true
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
@@ -36,8 +38,9 @@ Rails.application.configure do
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
-  config.assets.raise_runtime_errors = true
+  BetterErrors::Middleware.allow_ip! "0.0.0.0/0"
+end
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-end

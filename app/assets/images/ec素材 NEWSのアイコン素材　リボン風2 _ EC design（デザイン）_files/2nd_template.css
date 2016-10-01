@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ECデザインとは　*/
+
+
+#content .thumbBox{
+	width:170px;
+	float:left;
+	height:150px;
+	margin:0px 20px 20px;	
+}
+
+
+
+
+
+/* 使用条件 */
+
+#content .cautionList{
+	margin:10px 20px 0;
+}
+
+#content dl.qa dt,
+#content dl.qa dd{
+	padding:20px 20px 20px 6px;
+	margin-left:20px;
+	width:800px;
+    
+}
+#content dl.qa dd{
+	border-bottom:#666 1px dotted;
+	
+}
+#content dl.qa dd:last-child{
+	border:none;
+	
+}
+
+#content dl.qa dt span{
+	display:block;
+	float:left;
+	background:#5e8fa6;
+	color:#FFF;
+	padding:4px 10px;
+    margin-right:12px;
+}
+#content dl.qa dd span{
+	display:block;
+	float:left;
+	background:#c21552;
+	color:#FFF;
+	padding:4px 10px;
+	margin:0 12px 20px 0;
+	
+
+}
+
+/* LINKS */
+
+#links h3{
+	margin:10px 0px;
+	font-size:90%;
+}
+
+#links .linksBox,
+#links .linksBox02{
+	width:40%;
+	float:left;
+	margin:20px 20px 20px 0px;	
+}
+
+#links .linksBox img,
+#links .linksBox02 img{
+	max-width:90%;
+}
+
+#links #linksArea{
+	width:100%;
+	
+}
+
+@media screen and (min-width: 1200px) {
+
+	#links #linksArea{
+		width:940px;
+		
+	}
+	
+	#links .linksBox,
+	#links .linksBox02{
+	width:202px;
+	float:left;
+	margin:20px 10px 20px 20px;
+	
+}
+
+	
+}
+
+#links .linksBox div,
+#links .linksBox02 div{
+	width:200px;
+	height:120px;
+}
+
+#links .linksBox div a,
+#links .linksBox02 div a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#links .linksBox div a:hover,
+#links .linksBox02 div a:hover{
+	background:#FFFFFF;
+	opacity:0.4;
+}
+
+#links .linksBox .link01{ background:url(../images/icon_site.gif) 0 0; }
+#links .linksBox .link02{ background:url(../images/icon_site.gif) -200px 0; }
+#links .linksBox .link03{ background:url(../images/icon_site.gif) -400px 0; }
+#links .linksBox .link04{ background:url(../images/icon_site.gif) -600px 0; }
+#links .linksBox .link05{ background:url(../images/icon_site.gif) -800px 0; }
+#links .linksBox .link06{ background:url(../images/icon_site.gif) -1000px 0; }
+#links .linksBox .link07{ background:url(../images/icon_site.gif) -1200px 0; }
+#links .linksBox .link08{ background:url(../images/icon_site.gif) -1400px 0; }
+#links .linksBox .link09{ background:url(../images/icon_site.gif) -1800px 0; }
+#links .linksBox .link10{ background:url(../images/icon_site.gif) -2000px 0; }
+
+#content .linksBox p.sentence,
+#content .linksBox02 p.sentence{
+	margin:10px 0 0 0;
+}
+
